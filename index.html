@@ -9,22 +9,78 @@
 <main>
   <h1 id="title">Survey form</h1>
     <p id="description">Let's talk music !!</p>
+    <div class="inner-survey-form">
     <form id="survey-form">
-        <label id="name-label" for="name">Name: </label> <input id="name" type="text" placeholder="Enter your name">
-        <label id="email-label" for="email">Email:</label> <input id="email" type="email" placeholder="Enter your email">
-        <label id="number-label" for="number">How old are you ?</label>
-        <input id="number" type="number" min="0" max="99" placeholder="Age">
-        <label id="dropdown-label">What is your #1 source for discovering new music ?</label>
-        <select name="no1source">
+<div class="prompt">
+    <label id="name-label" for="name">Name: </label>
+</div>
+        <div class="response"><input id="name" type="text" placeholder="Enter your name"></div>
+        <div class="prompt"><label id="email-label" for="email">Email:</label></div>
+        <div class="response"><input id="email" type="email" placeholder="Enter your email"></div>
+        <div class="prompt"><label id="number-label" for="number">How old are you ?</label></div>
+        <div class="response"><input id="number" type="number" min="0" max="99" placeholder="Age"></div>
+        <div class="prompt"><label id="dropdown-label">What is your #1 source for discovering new music ?</label></div>
+        <div class="response"><select name="no1source">
             <option disabled value>Select an option"</option>
             <option value="Spotify">Spotify</option>
             <option value="AppleMusic">Apple Music</option>
             <option value="radio">Radio</option>
             <option value="other">Other</option>
-        </select>
-        <label>
-            <input type="radio" name="decade">
+        </select></div>
+        <div class="prompt">What decade rocks you the most ?</div>
+<div class="response">
+    <label for="50s">
+            <input id="50s" type="radio" name="decade">50s
         </label>
+        <label for="60s">
+            <input id="60s" type="radio" name="decade">60s
+        </label>
+        <label for="70s">
+            <input id="70s" type="radio" name="decade">70s
+        </label>
+        <label for="80s">
+            <input id="80s" type="radio" name="decade">80s
+        </label>
+        <label for="90s">
+            <input id="90s" type="radio" name="decade">90s
+        </label>
+        <label for="00s">
+            <input id="00s" type="radio" name="decade">00s
+        </label>
+        <label for="othernone">
+            <input id="othernone" type="radio" name="decade">Other/None
+        </label>
+</div>
+        <div class="prompt">What genres of music do you like ? (Check all)</div>
+<div class="response">
+    <label for="rock">
+            <input id="rock" type="checkbox" name="rock">Rock
+        </label>
+        <label for="EDM">
+            <input id="EDM" type="checkbox" name="EDM">EDM
+        </label>
+        <label for="jazz">
+            <input id="jazz" type="checkbox" name="jazz">Jazz
+        </label>
+        <label for="classical">
+            <input id="classical" type="checkbox" name="classical">Classical
+        </label>
+        <label for="reggae">
+            <input id="reggae" type="checkbox" name="reggae">Reggae
+        </label>
+        <label for="country">
+            <input id="country" type="checkbox" name="country">Country/Western
+        </label>
+        <label for="pop">
+            <input id="pop" type="checkbox" name="pop">Pop
+        </label>
+</div>
+<div class="response">
+    <label for="albums">
+            <textarea id="albums" name="albums" placeholder="List your favourite songs or albums here"></textarea>
+        </label>
+</div>
+    </div>
 
 
 
